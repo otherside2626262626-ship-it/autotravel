@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Как путешествовать на машине в современных реалиях</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--tx:#1d2330;--mut:#5d6575;--ac:#d9531e;--ac2:#14506b;--br:#e3ded3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--card:#1e242e;--tx:#eceff4;--mut:#a3adbd;--ac:#ff8a55;--ac2:#6cc3e8;--br:#2e3643}}
+:root[data-theme="dark"]{--bg:#14181f;--card:#1e242e;--tx:#eceff4;--mut:#a3adbd;--ac:#ff8a55;--ac2:#6cc3e8;--br:#2e3643}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--ac2);color:#fff;padding:14px 16px 0}
+header b{font-size:1.05rem}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+nav button{flex:none;border:0;background:rgba(255,255,255,.14);color:#fff;padding:9px 14px;border-radius:10px 10px 0 0;font:inherit;font-size:.9rem;cursor:pointer}
+nav button.on{background:var(--bg);color:var(--tx);font-weight:600}
+main{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+section{display:none}section.on{display:block}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0}
+h2{font-size:1.3rem;margin:1.4em 0 .4em;color:var(--ac2)}
+h3{font-size:1.05rem;margin:1em 0 .3em}
+.hero{background:linear-gradient(135deg,var(--ac2),var(--ac));color:#fff;border-radius:16px;padding:24px 20px;margin-bottom:16px}
+.hero p{margin:.4em 0 0;opacity:.92}
+.card{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:14px 16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.grid .card{margin:0}
+ul,ol{padding-left:1.2em;margin:.4em 0}li{margin:.25em 0}
+.tag{display:inline-block;background:var(--ac);color:#fff;border-radius:99px;padding:1px 10px;font-size:.78rem;margin-right:6px}
+.note{border-left:4px solid var(--ac);background:var(--card);padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0;color:var(--mut);font-size:.93rem}
+label{display:block;font-size:.85rem;color:var(--mut);margin-top:8px}
+input{width:100%;padding:10px;border:1px solid var(--br);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.res{background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:12px;font-weight:600}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:420px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--br);font-size:.92rem}
+th{color:var(--ac2)}
+.step{display:flex;gap:12px}.step i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700}
+footer{text-align:center;color:var(--mut);font-size:.82rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<b>🚗 АвтоПутеводитель</b>
+<nav id="nav"></nav>
+</header>
+<main>
+
+<section id="home">
+<div class="hero"><h1>Как путешествовать на машине в современных реалиях?</h1>
+<p>Индивидуальный проект, 10 класс. Информационный сайт-путеводитель для самостоятельной подготовки автопоездки.</p></div>
+<h2>Актуальность</h2>
+<p>Автопутешествие даёт свободу: свой маршрут, свой график, багаж без ограничений и остановки там, где интересно. Сегодня, когда авиасообщение стало дороже и сложнее, а навигационные приложения и онлайн-сервисы доступны каждому, поездка на машине стала одним из самых популярных способов путешествовать.</p>
+<h2>Почему выбирают машину</h2>
+<div class="grid">
+<div class="card"><b>Свобода</b><br>Можно менять план по ходу поездки.</div>
+<div class="card"><b>Экономия</b><br>Для компании из 3–4 человек часто дешевле билетов.</div>
+<div class="card"><b>Комфорт</b><br>Много вещей, животные, дети — без ограничений.</div>
+<div class="card"><b>Впечатления</b><br>Видно страну целиком, а не только пункт прилёта.</div>
+</div>
+<h2>Цель проекта</h2>
+<p>Создать сайт, который помогает человеку самостоятельно подготовить автомобильное путешествие в современных условиях.</p>
+<h2>Задачи</h2>
+<ol>
+<li>Изучить, как выбрать направление и построить маршрут.</li>
+<li>Разобрать цифровые инструменты: карты, навигацию, связь.</li>
+<li>Научиться планировать бюджет поездки.</li>
+<li>Выяснить, какие документы нужны, в том числе за границей.</li>
+<li>Собрать правила безопасности в пути.</li>
+<li>Создать сайт и разработать пример маршрута Москва → Грузия → Турция → Москва.</li>
+</ol>
+<h2>Целевая аудитория</h2>
+<p>Начинающие путешественники на автомобиле, студенты и школьники, планирующие поездку с семьёй, а также все, кто впервые отправляется за границу на своей машине.</p>
+<h2>Выводы по проекту</h2>
+<div class="card">
+<b>Что изучено.</b> Этапы подготовки, работа с картами, расчёт бюджета, документы, безопасность.<br><br>
+<b>Какие проблемы возникают.</b> Неточный расчёт времени и денег, поломки, отсутствие связи, проблемы с документами и страховкой на границе, незнание местных правил.<br><br>
+<b>Как помогают технологии.</b> Навигаторы учитывают пробки, офлайн-карты работают без интернета, приложения показывают АЗС, цены и очереди на границе, eSIM упрощает связь.<br><br>
+<b>Польза сайта.</b> Вся информация собрана в одном месте, есть калькуляторы маршрута и бюджета и готовый пример поездки.
+</div>
+</section>
+
+<section id="prep">
+<h1>Подготовка</h1>
+<p>Что сделать до выезда — по порядку.</p>
+<div class="card step"><i>1</i><div><b>Направление и сроки.</b> Определите цель (море, горы, города), число людей и количество дней. Проверьте сезон: перевалы зимой могут быть закрыты.</div></div>
+<div class="card step"><i>2</i><div><b>Маршрут.</b> Построите его на странице «Маршрут»: расстояние, время, остановки и ночёвки.</div></div>
+<div class="card step"><i>3</i><div><b>Проверка автомобиля.</b> Сделайте ТО за 1–2 недели до выезда и проверьте пункты ниже.</div></div>
+<div class="card step"><i>4</i><div><b>Документы и страховка.</b> См. страницу «Документы». Для загранпоездки начните за 1–2 месяца.</div></div>
+<div class="card step"><i>5</i><div><b>Бронирование.</b> Жильё на первые ночи и на пики сезона лучше забронировать с бесплатной отменой.</div></div>
+<div class="card step"><i>6</i><div><b>Сборы.</b> Вещи, аптечка, зарядки, наличные и карты.</div></div>
+<h2>Проверка автомобиля</h2>
+<div class="card"><ul>
+<li>Масло и технические жидкости (охлаждающая, тормозная, омывайка).</li>
+<li>Шины: давление, износ протектора, сезонность; исправное запасное колесо и домкрат.</li>
+<li>Тормозные колодки и диски.</li>
+<li>Аккумулятор, ремень/цепь ГРМ, свечи, фильтры.</li>
+<li>Свет, дворники, кондиционер/печка.</li>
+<li>Знак аварийной остановки, огнетушитель, жилет, буксировочный трос.</li>
+</ul></div>
+</section>
+
+<section id="route">
+<h1>Маршрут</h1>
+<h2>Как построить маршрут</h2>
+<div class="card"><ol>
+<li>Отметьте обязательные точки: старт, цель, места, которые хочется увидеть.</li>
+<li>Постройте маршрут в навигаторе и сравните 2–3 варианта (быстрый, короткий, без платных дорог).</li>
+<li>Разбейте путь на дни: комфортно проезжать <b>500–700 км</b> в сутки или 7–9 часов за рулём.</li>
+<li>Через каждые 2–3 часа делайте остановку на 15–20 минут.</li>
+<li>Ночёвки планируйте в городах с запасом жилья, до наступления темноты.</li>
+<li>Добавьте резерв времени 10–15% на пробки, границу и непредвиденное.</li>
+</ol></div>
+<h2>Калькулятор времени в пути</h2>
+<div class="card">
+<div class="row">
+<div><label>Расстояние, км</label><input id="r_km" type="number" value="2400"></div>
+<div><label>Средняя скорость, км/ч</label><input id="r_sp" type="number" value="75"></div>
+<div><label>Часов за рулём в день</label><input id="r_h" type="number" value="8"></div>
+</div>
+<div class="res" id="r_out"></div>
+</div>
+<div class="note">Средняя скорость с учётом остановок и населённых пунктов обычно 60–80 км/ч, в горах меньше.</div>
+</section>
+
+<section id="maps">
+<h1>Карты и приложения</h1>
+<div class="grid">
+<div class="card"><span class="tag">Навигация</span><br>Яндекс Карты / Навигатор, Google Maps, 2ГИС: маршрут, пробки, камеры, АЗС. Для разных регионов полезно иметь несколько приложений.</div>
+<div class="card"><span class="tag">Офлайн</span><br>Organic Maps, Maps.me, офлайн-области в Google Maps и Яндекс Картах. Скачивайте карты дома по Wi-Fi.</div>
+<div class="card"><span class="tag">Связь</span><br>Местная SIM или eSIM, роуминг у оператора. Проверьте покрытие и пакет интернета заранее.</div>
+<div class="card"><span class="tag">Сервисы</span><br>Booking, Airbnb и аналоги — жильё; приложения АЗС и платных дорог; Google Translate с офлайн-языками.</div>
+</div>
+<h2>Несколько карт в разных странах</h2>
+<p>Покрытие и точность карт различаются по странам. Основной навигатор выбирайте под регион, а второй держите как запасной. Сверяйте спорные участки в двух приложениях, а также с дорожными знаками.</p>
+<h2>Что делать, если нет связи</h2>
+<div class="card"><ul>
+<li>Пользуйтесь офлайн-картами и заранее сохранёнными точками.</li>
+<li>Скриншоты бронирований и документов держите в телефоне.</li>
+<li>Возьмите бумажную карту или атлас на ключевые регионы.</li>
+<li>Заправляйтесь заранее: в горах и пустынных районах АЗС редки.</li>
+<li>Сообщите близким примерный график и ночёвки.</li>
+<li>Зарядное устройство от прикуривателя и powerbank — обязательны.</li>
+</ul></div>
+</section>
+
+<section id="budget">
+<h1>Бюджет</h1>
+<h2>Что входит в расходы</h2>
+<div class="card"><ul>
+<li><b>Топливо</b>: расстояние × расход (л/100 км) × цена литра.</li>
+<li><b>Платные дороги и парковки</b>: зависят от страны.</li>
+<li><b>Жильё и питание</b>: самая гибкая статья.</li>
+<li><b>Страховка</b>: ОСАГО/«зелёная карта», ДМС для путешественников.</li>
+<li><b>Непредвиденное</b>: рекомендуется резерв 10–20%.</li>
+</ul></div>
+<h2>Калькулятор бюджета</h2>
+<div class="card">
+<div class="row">
+<div><label>Расстояние (туда-обратно), км</label><input id="b_km" type="number" value="5500"></div>
+<div><label>Расход, л/100 км</label><input id="b_l" type="number" value="8"></div>
+<div><label>Цена топлива, ₽/л</label><input id="b_p" type="number" value="58"></div>
+<div><label>Дней в поездке</label><input id="b_d" type="number" value="14"></div>
+<div><label>Жильё, ₽/ночь</label><input id="b_n" type="number" value="4000"></div>
+<div><label>Питание, ₽/день</label><input id="b_f" type="number" value="3000"></div>
+<div><label>Платные дороги и парковки, ₽</label><input id="b_t" type="number" value="6000"></div>
+<div><label>Страховка и сборы, ₽</label><input id="b_s" type="number" value="12000"></div>
+<div><label>Резерв, %</label><input id="b_r" type="number" value="15"></div>
+</div>
+<div class="res" id="b_out"></div>
+</div>
+<div class="note">Цены в примере условные: перед поездкой подставьте актуальные. Бюджет рассчитан на весь автомобиль, а не на одного человека.</div>
+</section>
+
+<section id="docs">
+<h1>Документы</h1>
+<div class="grid">
+<div class="card"><h3>Для поездки по России</h3><ul><li>Паспорт</li><li>Водительское удостоверение</li><li>СТС (свидетельство о регистрации)</li><li>Полис ОСАГО</li><li>Доверенность, если машина не ваша</li></ul></div>
+<div class="card"><h3>За границу</h3><ul><li>Загранпаспорт (срок действия — по правилам страны)</li><li>Международное водительское удостоверение, если требуется</li><li>Страховка автомобиля, действующая в стране</li><li>Нотариальное согласие владельца/ доверенность</li><li>Страховка путешественника (ДМС)</li></ul></div>
+</div>
+<h2>Особенности загранпоездки</h2>
+<div class="card"><ul>
+<li><b>Граница:</b> проверка документов, декларация, временный ввоз автомобиля, иногда очереди несколько часов.</li>
+<li><b>Страховка машины:</b> российский полис ОСАГО за границей обычно не действует, нужен местный полис, часто его оформляют на границе.</li>
+<li><b>ПДД:</b> скоростные режимы, правила обгона, ближний свет днём, штрафы и алкоголь отличаются по странам.</li>
+<li><b>Валюта и связь:</b> имейте карту международной платёжной системы, немного наличных и местную SIM или eSIM.</li>
+</ul></div>
+<div class="note">Правила въезда, наличие пунктов пропуска и требования к страховке меняются. Перед поездкой проверьте их на официальных сайтах МИД, ФТС и посольств.</div>
+</section>
+
+<section id="safety">
+<h1>Безопасность</h1>
+<div class="grid">
+<div class="card"><h3>За рулём</h3><ul><li>Ремни — у всех пассажиров.</li><li>Не ездить уставшим: при сонливости остановиться.</li><li>Не превышать скорость и держать дистанцию.</li><li>Не отвлекаться на телефон.</li><li>Ночью и в горах снижать скорость.</li></ul></div>
+<div class="card"><h3>Режим в дороге</h3><ul><li>Старт утром, финиш до темноты.</li><li>Остановка каждые 2–3 часа.</li><li>Водители меняются, если их двое.</li><li>Вода и лёгкая еда под рукой.</li></ul></div>
+</div>
+<h2>Если что-то случилось</h2>
+<div class="card"><ol>
+<li>Включить аварийку, остановиться в безопасном месте.</li>
+<li>Выставить знак аварийной остановки.</li>
+<li>Пассажиры выходят и отходят за ограждение.</li>
+<li>Позвонить в экстренные службы (в Европе, включая многие страны, работает 112) и в страховую/техпомощь.</li>
+<li>Сфотографировать место и повреждения, записать контакты.</li>
+</ol></div>
+<h2>Аптечка и необходимые вещи</h2>
+<div class="card"><ul>
+<li>Аптечка: перевязочные материалы, антисептик, личные лекарства, средства от тошноты, жаропонижающее, антигистаминное.</li>
+<li>Огнетушитель, знак, жилет, трос, насос/компрессор, запасное колесо.</li>
+<li>Фонарик, перчатки, воронка, запас масла и омывайки.</li>
+<li>Powerbank, зарядки, документы в двух копиях.</li>
+<li>Вода, перекусы, тёплая одежда, плед.</li>
+</ul></div>
+</section>
+
+<section id="example">
+<h1>Пример путешествия</h1>
+<p>Москва → Грузия → Турция → Москва, около 14 дней.</p>
+<div class="scroll"><table>
+<tr><th>День</th><th>Участок</th><th>~ км</th></tr>
+<tr><td>1</td><td>Москва → Ростов-на-Дону</td><td>1100</td></tr>
+<tr><td>2</td><td>Ростов → Владикавказ</td><td>700</td></tr>
+<tr><td>3</td><td>Владикавказ → Верхний Ларс (граница) → Казбеги → Тбилиси</td><td>350</td></tr>
+<tr><td>4–5</td><td>Тбилиси, отдых и осмотр города</td><td>—</td></tr>
+<tr><td>6</td><td>Тбилиси → Батуми</td><td>370</td></tr>
+<tr><td>7</td><td>Батуми, граница с Турцией (Сарпи) → Трабзон</td><td>330</td></tr>
+<tr><td>8–9</td><td>Трабзон, Ризе, монастырь Сумела, чайные плантации</td><td>200</td></tr>
+<tr><td>10</td><td>Трабзон → Батуми (обратная граница)</td><td>330</td></tr>
+<tr><td>11</td><td>Батуми → Тбилиси</td><td>370</td></tr>
+<tr><td>12</td><td>Тбилиси → Верхний Ларс → Владикавказ</td><td>350</td></tr>
+<tr><td>13–14</td><td>Владикавказ → Ростов → Москва (две ночи в пути)</td><td>1800</td></tr>
+</table></div>
+<div class="note">Общая длина — ориентировочно 5500–6000 км. Для расчёта бюджета введите 5500 км на странице «Бюджет», а для времени — на странице «Маршрут».</div>
+<h2>Особенности маршрута</h2>
+<div class="card"><ul>
+<li><b>Граница РФ—Грузия</b> (Верхний Ларс): очереди бывают значительными, заранее смотрите онлайн-ситуацию и берите запас времени.</li>
+<li><b>Грузинская трасса</b> через Кавказ: горные участки, снижайте скорость, заправляйтесь заранее.</li>
+<li><b>Граница Грузия—Турция:</b> оформляется временный ввоз автомобиля, нужна страховка.</li>
+<li><b>Валюты:</b> рубли, лари, турецкие лиры. Платите картой, где возможно, и имейте небольшой запас наличных.</li>
+<li><b>Связь:</b> купите грузинскую и турецкую SIM или eSIM.</li>
+</ul></div>
+<div class="note">Маршрут учебный. Перед реальной поездкой уточните актуальные правила въезда и работу пунктов пропуска.</div>
+</section>
+
+</main>
+<footer>Индивидуальный проект · 10 класс · «Как путешествовать на машине в современных реалиях?»</footer>
+
+<script>
+var pages=[["home","Главная"],["prep","Подготовка"],["route","Маршрут"],["maps","Карты и приложения"],["budget","Бюджет"],["docs","Документы"],["safety","Безопасность"],["example","Пример путешествия"]];
+var nav=document.getElementById("nav");
+function show(id){
+  if(!pages.some(function(p){return p[0]===id}))id="home";
+  pages.forEach(function(p){document.getElementById(p[0]).classList.toggle("on",p[0]===id)});
+  Array.prototype.forEach.call(nav.children,function(b){b.classList.toggle("on",b.dataset.id===id)});
+  window.scrollTo(0,0);
+  try{history.replaceState(null,"","#"+id)}catch(e){}
+}
+pages.forEach(function(p){
+  var b=document.createElement("button");b.textContent=p[1];b.dataset.id=p[0];
+  b.onclick=function(){show(p[0])};nav.appendChild(b);
+});
+function n(id){return parseFloat(document.getElementById(id).value)||0}
+function fmt(x){return Math.round(x).toLocaleString("ru-RU")}
+function calcRoute(){
+  var km=n("r_km"),sp=n("r_sp"),h=n("r_h");
+  var t=sp>0?km/sp:0,days=h>0?Math.ceil(t*1.1/h):0;
+  document.getElementById("r_out").innerHTML="Время за рулём: "+t.toFixed(1)+" ч<br>Дней в пути (с запасом 10%): "+days+"<br>Км в день: ≈ "+(days?fmt(km/days):0);
+}
+function calcBudget(){
+  var fuel=n("b_km")*n("b_l")/100*n("b_p"),stay=n("b_n")*Math.max(n("b_d")-1,0),food=n("b_f")*n("b_d");
+  var sum=fuel+stay+food+n("b_t")+n("b_s"),res=sum*n("b_r")/100;
+  document.getElementById("b_out").innerHTML="Топливо: "+fmt(fuel)+" ₽<br>Жильё: "+fmt(stay)+" ₽<br>Питание: "+fmt(food)+" ₽<br>Дороги и страховка: "+fmt(n("b_t")+n("b_s"))+" ₽<br>Резерв: "+fmt(res)+" ₽<br><b>Итого: "+fmt(sum+res)+" ₽</b>";
+}
+document.querySelectorAll("input").forEach(function(i){i.addEventListener("input",function(){calcRoute();calcBudget()})});
+calcRoute();calcBudget();
+show(location.hash.slice(1)||"home");
+</script>
+</body>
+</html>
